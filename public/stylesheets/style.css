@@ -1,0 +1,80 @@
+body{
+  width:100%;
+  background-color: #d9d9d9;
+}
+.navbar{
+  border-radius: 0px;
+  margin-bottom: 0px !important;
+}
+.badge {
+  display:inline;
+}
+.well{
+  background-color: #b3b3b3;
+}
+/* Colors */
+.bg-purple{
+  background-color: #990099 !important;
+  color:white;
+}
+.bg-blue{
+  background-color: #0000cc !important;
+  color:white;
+}
+
+.card{
+  background-color: white;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 5px 0px;
+  padding: 10px 10px 10px 10px;
+}
+
+.tag {
+  color: white;
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #777;
+  border-radius: 0px;
+}
+
+/* Shamelessly stolen from StartBootstrap https://blackrockdigital.github.io/startbootstrap-landing-page/ */
+
+.intro-header {
+  width:100%;
+  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-bottom: 50px;
+  text-align: center;
+  color: #f8f8f8;
+  background: url(../images/unnamedgreen.jpg) no-repeat center center;
+  background-size: auto;
+  min-width:100%;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 100%;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}

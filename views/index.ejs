@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% include partials/nav %>
+    <section id = "Landing">
+      <div class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Elizabeth Murray</h1>
+                        <h3>Command, Ideation, Restorative, Futuristic, Learner</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <li><a href="https://twitter.com/CodedWrong" class="btn btn-default btn-lg"><span class="network-name">Twitter</span></a></li>
+                            <li><a href="https://github.com/Sterahi" class="btn btn-default btn-lg"><span class="network-name">Github</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.container -->
+    </div><!-- /.intro-header -->
+    <!-- Page Content -->
+    </section>
+    <section id = "Content">
+      <div class = "container">
+        <div class = "page-header">
+          <h3>Featured Projects</h3>
+        </div>
+        <div class = "col-sm-4">
+          <div class = "card">
+            <h4>Sentinel-FTP <span class = "badge bg-blue">Professional</span></h4>
+            <small><i>Code is unavailable due to contract</i></small>
+             <div>
+                This Segment is in charge of recieving files from remote panels as it's name suggests. However it also fills
+                the alert aspect (sending emails/texts) as well as parse data as it's recieved before finally inserting it into the database.
+                <span class = "tag bg-blue">Python</span> <span class = "tag bg-blue">pyftpdlib</span>
+              </div>
+            </div>
+          </div>
+          <div class = "col-sm-4">
+            <div class = "card">
+              <h4>Sentinel-Client <span class = "badge bg-blue">Professional</span></h4>
+              <small><i>Code is unavailable due to contract</i></small>
+              <div>
+                The Client side has been built with Ruby on Rails and Bootstrap as the basic CSS with some custom stylings added over top. I've implemented Devise and Scambra's Devise_Invitable
+                to ensure full security. This remains in construction! <span class = "tag bg-blue">Rails</span> <span class = "tag bg-blue">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+          <div class = "col-sm-4">
+            <div class = "card">
+              <h4>Rise Bot <span class = "badge bg-purple">Personal</span></h4>
+              <div>
+                Sometimes I build something and I'm not exactly certain why... <br />
+                Rise Bot is based off of the Persona 4 character <a href = "https://www.wikiwand.com/en/List_of_Persona_4_characters#/Rise_Kujikawa">Rise Kujikawa</a> in terms of her "personality" while becoming a sort of complete version of my knowledge of databases as well as working with Node based JavaScript. Rise Bot has been built for Discord servers.<span class = "tag bg-purple">JavaScript</span> <span class = "tag bg-purple">Node</span> <span class = "tag bg-purple">discord.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id = "javascripts">
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </section>
+  </body>
+</html>
