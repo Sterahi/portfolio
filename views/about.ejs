@@ -1,21 +1,74 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Skeleton Beginnings > CodedWrong.xyz</title>
+    <title><%= title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <link rel = "stylesheet" href = "assets/css/style.css" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
     <% include partials/nav %>
     <section id = "content">
       <div class = "container">
-        <div class = "page-header">
-          <h2>About me!</h2>
+        <div class = "card">
+          <div class = "page-header" style = "margin-top:10px !important;">
+            <h2>About me!</h2>
+          </div>
+          <p>
+            <img class = "img-circle" height = 100 src = "/images/unnamedgreen.jpg"/>
+            So for some reason you've decided you want to learn more about the developer behind this site. Let's start with the basics. I'm Elizabeth, I've been programming in some way shape or for since I was about 13, so a minimum of 10 years. I started with some very basic Access Databases and macros, from there I took to HTML development and I fell in love with web development.
+          </p>
+          <p>
+            I'm ashamed to say that for years I didn't think that there was anything but static HTML sites. So for a while my knowledge has been lacking on the subject, now however I've flung myself into working with Node.js (This site here!) as well as Ruby on Rails, and finally I've worked with Flask for Python. With Flask My understanding is really limited however.
+          </p>
+          <p>
+            In order to become what I consider a "full fledged Node Dev" I've taken on the <a href = "mean.io">MEAN</a> stack for most of my work. This site itself is written for Node, but only using Node and Express.js as I didn't want to keep it as an Ajax'd page. In terms of Mongo I'm just not a fan of no SQL styled databases (or the iffy security of Mongo) so instead I'm using MySQL to keep it secure and easily manageable. So it's more of a MyEN stack I've taken a liking to.<img class = "img" style = "float:right;" height = 250 src ="/images/qr.jpg" />
+          </p>
+          <p>
+            Rails I really only use now when I need to have something up and running quickly, The only project I have running on Rails is the Sentinel Project I've been developing for Class 1 inc. this is also mostly because I just needed a simple web interface that could handle querying and I hadn't learned Node to the level I have now.
+          </p>
+          <p>
+            Asides from programming I also play vieo games fairly regularly. I've been an avid "raider" in Final Fantasy XIV for around two years now. I've always loved learning new fights and developing battle plans with my team mates so we can play to each other's strengths and support each others weaknesses. I am a firm believer in everyone knowing their strengths and firmly understanding their weaknesses, there's no shame in having a weakness. Every time we go into a battle I always look for ways to improve myself, wether it's pushing my skills a little harder, or working on memorizing the boss's pattern so I can time damage reduction properly.
+          </p>
+          <p>
+            Remaining in the realm of gaming I adore when I can pair programming and gaming together. Wether this is tinkering with mods, or even building a tool to make it easier for people to use to make their games more enjoyable (or sometimes just my own game time)! I love the feeling when everything comes together at the very end and just <i>clicks</i> together.
+          </p>
         </div>
-        <p>
-          I actually really have no idea what to put here... I'm a web/software developer who has been called adaptable by some, and overly stubborn by others. I'm constantly trying to learn different languages because every language has it's benefits and detriments. One of the projects I'm working on currently is being written in C#, however I thought VB.net shared more with it. So I built the application around a text box with an input. Only to find out that there's no input available in a text box... at least not by default!
-        </p>
+        <div class = "container">
+          <div class = "page-header">
+            <h3>Featured Projects</h3>
+          </div>
+          <div class = "col-sm-4">
+            <div class = "card">
+              <h4>Sentinel-FTP <span class = "badge bg-blue">Professional</span></h4>
+              <small><i>Code is unavailable due to contract</i></small>
+               <div>
+                  This Segment is in charge of recieving files from remote panels as it's name suggests. However it also fills
+                  the alert aspect (sending emails/texts) as well as parse data as it's recieved before finally inserting it into the database.
+                  <span class = "tag bg-blue">Python</span> <span class = "tag bg-blue">pyftpdlib</span>
+                </div>
+              </div>
+            </div>
+            <div class = "col-sm-4">
+              <div class = "card">
+                <h4>Sentinel-Client <span class = "badge bg-blue">Professional</span></h4>
+                <small><i>Code is unavailable due to contract</i></small>
+                <div>
+                  The Client side has been built with Ruby on Rails and Bootstrap as the basic CSS with some custom stylings added over top. I've implemented Devise and Scambra's Devise_Invitable
+                  to ensure full security. This remains in construction! <span class = "tag bg-blue">Rails</span> <span class = "tag bg-blue">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+            <div class = "col-sm-4">
+              <div class = "card">
+                <h4>Rise Bot <span class = "badge bg-purple">Personal</span></h4>
+                <div>
+                  Sometimes I build something and I'm not exactly certain why... <br />
+                  Rise Bot is based off of the Persona 4 character <a href = "https://www.wikiwand.com/en/List_of_Persona_4_characters#/Rise_Kujikawa">Rise Kujikawa</a> in terms of her "personality" while becoming a sort of complete version of my knowledge of databases as well as working with Node based JavaScript. Rise Bot has been built for Discord servers.<span class = "tag bg-purple">JavaScript</span> <span class = "tag bg-purple">Node</span> <span class = "tag bg-purple">discord.js</span>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
     <section id = "javascripts">

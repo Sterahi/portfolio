@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Skeleton Beginnings > CodedWrong.xyz</title>
+    <title><%= title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <link rel = "stylesheet" href = "assets/css/style.css" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
     <% include partials/nav %>
     <section id = "content">
       <div class = "container">
-        <div class = "page-header">
-          Want to Connect?
+        <div class = "card">
+          <div class = "page-header">
+            <h3>Want to Connect?</h3>
+            <p>
+              I'm easy to get a hold of, just use any of the below!
+            </p>
+          </div>
+          <h3>GitHub!</h3>
+          <img src ="images/Octocat.png" height = "100px;" href = "https://github.com/Sterahi/" />
+          <h3>Twitter!</h3>
+          <a href="https://twitter.com/CodedWrong" class="twitter-follow-button" data-show-count="false" data-size="large"><img src = "/images/twitter.png" height = 100/></a>
+          <h3>Email me!</h3>
+          <a href = "mailto:lizmurray479@gmail.com"><span class = "glyphicon glyphicon-envelope" style = "font-size:100px; color:black !important; decoration:none;"></span></a>
         </div>
-        <h3>GitHub!</h3>
-        <img src ="assets\images\GitHub_Logo.png" height = "30px;" href = "https://github.com/Sterahi/" />
-        <small>Still working on getting all my projects up there!</small>
-        <h3>Twitter!</h3>
-        <a href="https://twitter.com/CodedWrong" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @CodedWrong</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        <h3>Email me!</h3>
-        <a href = "mailto:liz@codedwrong.xyz">No Fancy picture to click on, just some text!</a>
       </div>
     </section>
     <section id = "javascripts">
